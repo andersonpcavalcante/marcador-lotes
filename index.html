@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marcador de Lotes Sujos – instalação</title>
+<style>
+body{margin:0;font-family:Segoe UI,Roboto,Arial,sans-serif;background:#f1f5f9;color:#1f2937}
+header{background:#1e3a8a;color:#fff;padding:22px 20px}header h1{margin:0;font-size:24px}header span{opacity:.85}
+main{max-width:820px;margin:0 auto;padding:18px 16px 40px}
+.card{background:#fff;border-radius:12px;padding:18px 20px;margin:0 0 16px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.autor{display:flex;gap:14px;align-items:center}.ini{width:52px;height:52px;border-radius:50%;background:#1e3a8a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;flex:none}
+.bm{display:inline-block;background:#e11d48;color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:10px;font-size:17px;cursor:grab}
+button{padding:11px 18px;border:0;border-radius:8px;background:#1e3a8a;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+h2{color:#1e3a8a;font-size:18px;margin:0 0 10px}ol,ul{padding-left:22px}li{margin:8px 0;line-height:1.45}p{line-height:1.45}#ok{color:#15803d;font-weight:600;margin-left:10px}
+.k{display:inline-block;border:1px solid #94a3b8;border-bottom-width:2px;border-radius:5px;padding:0 6px;font:600 13px Consolas,monospace;background:#f8fafc}
+.dica{background:#eff6ff;border-left:4px solid #2563eb;padding:10px 12px;border-radius:6px}
+.novo{background:#ecfdf5;border-left:4px solid #15803d}
+textarea{width:100%;height:84px;margin-top:10px;font:13px monospace;box-sizing:border-box}
+</style></head><body>
+<header><h1>Marcador de Lotes Sujos</h1><span>SisGeoBV · Prefeitura de Boa Vista · <span id="ver">versão atual</span></span></header>
+<main>
+<div class="card autor"><div class="ini">AC</div><div>Desenvolvido por <b>Anderson Paulino Cavalcante</b><br>Fiscal Tributário · Departamento de Fiscalização</div></div>
+
+<div class="card"><h2>O que é</h2>
+<p>Uma ferramenta que funciona dentro do mapa do <b>SisGeoBV</b>. Com ela ligada, você toca (ou clica) no lote sujo e ele entra numa lista com inscrição, proprietário, CPF-CNPJ, endereço e bairro. No fim, gera o relatório (PDF) e a planilha (Excel).</p>
+<p>Ela fica guardada como um <b>favorito</b> do navegador. Clicar nesse favorito, com o mapa aberto, liga a ferramenta. Funciona no notebook, no celular (iPhone ou Android) e no tablet ou iPad.</p>
+<p class="dica novo"><b>Instala uma vez só.</b> O favorito busca sempre a versão mais nova da ferramenta. Quando sair uma atualização, ninguém precisa reinstalar: basta recarregar o SisGeoBV (<span class="k">F5</span>) e abrir o favorito.</p></div>
+
+<div class="card"><h2>Instalar no notebook (Google Chrome)</h2><ol>
+<li><b>Mostre a barra de favoritos.</b> No Chrome, aperte <span class="k">Ctrl</span> + <span class="k">Shift</span> + <span class="k">B</span> ao mesmo tempo. Uma barra aparece logo abaixo do endereço do site. Se ela já aparece, pule este passo (apertar de novo a esconde).</li>
+<li><b>Se já existe um favorito "Lotes sujos" antigo, apague-o:</b> clique nele com o botão direito do mouse e escolha <b>Excluir</b>.</li>
+<li><b>Arraste o botão vermelho abaixo para a barra de favoritos:</b> clique nele, segure o botão do mouse, leve até a barra de favoritos e solte. Não basta clicar: é preciso arrastar.<br><br><a class="bm" href="javascript:(function(){var s=document.createElement('script');s.src='https://andersonpcavalcante.github.io/marcador-lotes/lotes_sujos.js?t='+Date.now();s.onerror=function(){alert('Não consegui baixar o Marcador de Lotes Sujos. Verifique a internet e tente de novo.')};document.head.appendChild(s)})()">Lotes sujos</a><br><br>Deve aparecer um favorito chamado <b>Lotes sujos</b> na barra.</li>
+<li><b>Abra o SisGeoBV</b> (sisgeobv.boavista.rr.gov.br) e faça o login normalmente.</li>
+<li><b>Ligue a camada dos lotes:</b> no menu de camadas do mapa, ative <b>Lotes base</b> (em Fiscalização base). Sem ela a ferramenta não encontra os lotes.</li>
+<li><b>Recarregue a página</b> apertando <span class="k">F5</span>.</li>
+<li><b>Clique no favorito "Lotes sujos".</b> Abre um painel azul e branco no canto do mapa, com a versão no topo.</li></ol>
+<p class="dica"><b>Uso diário:</b> abra o SisGeoBV, faça o login e clique no favorito. Na primeira vez no notebook, use <b>Carregar planilha</b> no painel para escolher os arquivos TXT das zonas (segure <span class="k">Ctrl</span> para escolher vários). Eles ficam guardados no navegador.</p></div>
+
+<div class="card"><h2>Código para celular, tablet e iPad</h2><p>No celular, no tablet e no iPad não dá para arrastar: o código abaixo é copiado e colado num favorito, como explicado a seguir.</p>
+<button id="copiar">Copiar código</button><span id="ok"></span>
+<textarea id="cod" spellcheck="false" autocapitalize="off" autocorrect="off">javascript:(function(){var s=document.createElement('script');s.src='https://andersonpcavalcante.github.io/marcador-lotes/lotes_sujos.js?t='+Date.now();s.onerror=function(){alert('Não consegui baixar o Marcador de Lotes Sujos. Verifique a internet e tente de novo.')};document.head.appendChild(s)})()</textarea>
+<p class="dica">Se o botão não responder, toque e segure dentro do quadro, escolha <b>Selecionar tudo</b> e depois <b>Copiar</b>.</p></div>
+
+<div class="card"><h2>Instalar no Android: celular (Samsung Galaxy e outros) ou tablet — Google Chrome</h2><ol>
+<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b> (quadro acima). Aparece "Código copiado".</li>
+<li>No Chrome, abra qualquer site e salve um favorito: menu <b>⋮</b> e toque na <b>estrela</b> (☆).</li>
+<li>Abra o menu <b>⋮ → Favoritos</b>, toque nos três pontinhos ao lado do favorito que acabou de salvar e escolha <b>Editar</b>.</li>
+<li>No <b>Nome</b>, escreva <b>Lotes sujos</b>. No <b>Endereço (URL)</b>, apague tudo, toque e segure e escolha <b>Colar</b>. O endereço deve começar com <b>javascript:</b>. Salve.<br>(Se já existia um "Lotes sujos" antigo, edite esse mesmo favorito em vez de criar outro.)</li>
+<li>Abra o <b>SisGeoBV</b>, faça o login, ative a camada <b>Lotes base</b> e recarregue a página.</li>
+<li><b>Para abrir a ferramenta:</b> toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão que tem a <b>estrela</b>. (Pela lista de favoritos não funciona no Android; tem de ser pela barra de endereço.)</li>
+<li>Para marcar: toque rápido, com o dedo parado, dentro do lote.</li></ol></div>
+
+<div class="card"><h2>Instalar no iPhone ou iPad — Google Chrome</h2><ol>
+<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b>.</li>
+<li>No Chrome, abra qualquer site, toque no menu <b>⋯</b> e escolha <b>Adicionar aos Favoritos</b>.</li>
+<li>Toque em <b>⋯ → Favoritos</b>, toque e segure o favorito salvo e escolha <b>Editar favorito</b>.</li>
+<li>Mude o nome para <b>Lotes sujos</b>, apague o endereço (URL), toque e segure e escolha <b>Colar</b>. Confira se começa com <b>javascript:</b> e toque em <b>OK</b>.</li>
+<li>Abra o <b>SisGeoBV</b>, faça o login, ative a camada <b>Lotes base</b> e recarregue a página.</li>
+<li><b>Para abrir a ferramenta:</b> toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão do favorito (ou abra pelo menu <b>⋯ → Favoritos</b>).</li></ol></div>
+
+<div class="card"><h2>Instalar no iPhone ou iPad — Safari</h2><ol>
+<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b>.</li>
+<li>Abra qualquer site, toque no ícone de compartilhar (□↑) e escolha <b>Adicionar Favorito</b>. Salve.</li>
+<li>Abra os Favoritos (ícone de livro), toque em <b>Editar</b>, escolha o favorito salvo, mude o nome para <b>Lotes sujos</b>, apague o endereço e cole o código. Toque em OK.</li>
+<li>Abra o SisGeoBV, faça o login, ative <b>Lotes base</b>, recarregue e abra o favorito pelo menu de Favoritos.</li></ol></div>
+
+<div class="card"><h2>Dicas para usar no celular</h2><ul>
+<li>O painel fica compacto. As opções de escritório (identificação do mapeamento, planilhas do cadastro, Excel, importar mapeamento e importar lista) ficam em <b>Mais opções</b>.</li>
+<li>Toque no <b>–</b> para recolher o painel numa barrinha com <b>MARCANDO</b> e <b>SEGUIR</b>. Ele volta recolhido da próxima vez.</li>
+<li>Funciona com o celular em pé ou deitado (num suporte no carro, deitado fica melhor). Em lote estreito, dê zoom antes de tocar.</li>
+<li>Deixe a tela sem bloquear durante a varredura: com a tela apagada, o GPS e o "Seguir o carro" param.</li>
+<li>No celular, só marque e use <b>Exportar mapeamento</b> (por exemplo, salvando no Google Drive). No notebook, use <b>Importar mapeamento</b> e escolha o arquivo. As planilhas do cadastro (com proprietários e CPF-CNPJ) ficam só no notebook.</li></ul></div>
+
+<div class="card"><h2>Se algo não funcionar</h2><ul>
+<li><b>"Não consegui baixar o Marcador":</b> o aparelho está sem internet. Confira a conexão e toque no favorito de novo.</li>
+<li><b>"Há uma versão antiga do Marcador aberta":</b> aperte <span class="k">F5</span> no SisGeoBV e clique no favorito de novo.</li>
+<li><b>"Abra o mapa do SisGeoBV":</b> o favorito foi clicado fora do mapa ou antes de o mapa carregar. Abra o mapa, espere carregar e clique de novo.</li>
+<li><b>"Sem acesso aos lotes":</b> ative a camada <b>Lotes base</b> ou faça o login de novo.</li>
+<li><b>Nada acontece ao clicar no favorito:</b> o favorito foi criado errado. Apague-o e repita a instalação.</li>
+<li>Os lotes marcados e as planilhas carregadas <b>não se perdem</b> ao atualizar.</li></ul></div>
+</main>
+<script>
+var COD=document.getElementById('cod').value.replace(/[\r\n]/g,'').trim();
+document.getElementById('copiar').onclick=function(){var t=document.getElementById('cod');
+function ok(){document.getElementById('ok').textContent='Código copiado.';}
+function manual(){t.value=COD;t.focus();t.select();t.setSelectionRange(0,COD.length);document.execCommand('copy');ok();}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(COD).then(ok,manual);}else{manual();}};
+fetch('lotes_sujos.js',{cache:'no-store'}).then(function(r){return r.text();}).then(function(s){var m=s.match(/var t="([\d.]+)"/);if(m)document.getElementById('ver').textContent='versão '+m[1];}).catch(function(){});
+</script></body></html>
