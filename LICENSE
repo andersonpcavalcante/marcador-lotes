@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2026 Anderson Paulino Cavalcante
+Fiscal Tributário · Departamento de Fiscalização · Prefeitura Municipal de Boa Vista (RR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Tradução informativa (vale o texto em inglês acima)
+
+Licença MIT — Marcador de Lotes Sujos
+
+Copyright (c) 2026 Anderson Paulino Cavalcante
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste programa e da documentação que o acompanha, para usá-lo, copiá-lo,
+modificá-lo, juntá-lo a outros, publicá-lo, distribuí-lo, sublicenciá-lo e/ou
+vendê-lo, desde que o aviso de direitos autorais acima (com o nome do autor) e
+este aviso de permissão sejam mantidos em todas as cópias ou partes relevantes.
+
+O programa é fornecido "como está", sem garantia de qualquer tipo. O autor não
+responde por danos decorrentes do seu uso.
+
+Observações do autor (não alteram a licença):
+- A ferramenta funciona sobre o SisGeoBV e só opera com o login e as
+  permissões de cada usuário; a licença não dá acesso a nenhum sistema.
+- Nunca publique neste repositório cadastro, TXT, planilhas, mapeamentos ou
+  qualquer arquivo com nome ou CPF de contribuintes (LGPD).
+- Melhorias são bem-vindas: quem fizer uma versão própria, mantenha o crédito
+  e, se puder, compartilhe a melhoria com o autor.
