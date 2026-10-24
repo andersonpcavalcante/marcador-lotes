@@ -24,136 +24,96 @@ nav a{display:inline-block;margin:0 10px 6px 0;color:#1e3a8a;font-weight:600}
 <div class="card autor"><div class="ini">AC</div><div>Desenvolvido por <b>Anderson Paulino Cavalcante</b><br>Fiscal Tributário · Departamento de Fiscalização</div></div>
 
 <div class="card"><h2>O que é</h2>
-<p>Uma ferramenta que funciona dentro do mapa do <b>SisGeoBV</b>. Com ela ligada, você toca (ou clica) no lote sujo e ele entra numa lista com inscrição, proprietário, CPF-CNPJ, endereço e bairro. No fim, gera o relatório (PDF) e a planilha (Excel).</p>
-<p>Serve para as duas etapas do trabalho:</p>
+<p>Uma ferramenta que funciona dentro do mapa do <b>SisGeoBV</b>, guardada como um <b>favorito</b> do navegador. Funciona no notebook, no celular (iPhone ou Android) e no tablet.</p>
 <ul>
-<li><b>Mapeamento do bairro:</b> a equipe percorre o bairro e só aponta os lotes sujos (sem foto).</li>
-<li><b>Vistoria de autuação:</b> o fiscal designado vai aos lotes apontados, confirma a situação e tira a <b>foto carimbada</b> (data e hora, GPS e inscrição), que sai no anexo do relatório.</li>
+<li><b>Mapeamento:</b> você toca no lote sujo e ele entra numa lista com inscrição, proprietário, CPF-CNPJ, endereço e bairro. No fim, sai o relatório (PDF) e a planilha (Excel).</li>
+<li><b>Rota:</b> a partir de uma lista de inscrições, a ferramenta leva você de lote em lote pela linha azul, na ordem do menor percurso. Serve para a vistoria e para qualquer visita.</li>
+<li><b>Vistoria:</b> no lote, você informa se está sujo ou limpo e tira a foto carimbada, que sai no anexo do relatório.</li>
 </ul>
-<p>Ela fica guardada como um <b>favorito</b> do navegador. Clicar nesse favorito, com o mapa aberto, liga a ferramenta. Funciona no notebook, no celular (iPhone ou Android) e no tablet ou iPad.</p>
-<p class="dica novo"><b>Instala uma vez só.</b> O favorito busca sempre a versão mais nova da ferramenta. Quando sair uma atualização, ninguém precisa reinstalar: basta recarregar o SisGeoBV (<span class="k">F5</span>) e abrir o favorito.</p>
-<nav><a href="#notebook">Notebook</a><a href="#android">Android</a><a href="#iphone">iPhone/iPad</a><a href="#vistoria">Vistoria com foto</a><a href="#rota">Rota no My Maps</a><a href="#relatorio">Relatório</a><a href="#problemas">Se algo não funcionar</a></nav></div>
+<p class="dica novo"><b>Instala uma vez só.</b> Quando sair uma atualização, ninguém precisa reinstalar: basta recarregar o SisGeoBV (<span class="k">F5</span>) e abrir o favorito.</p>
+<nav><a href="#instalar">Instalar</a><a href="#mapeamento">Mapeamento</a><a href="#rota">Rota</a><a href="#vistoria">Vistoria</a><a href="#fimdodia">Fim do dia</a><a href="#relatorio">Relatório</a><a href="#problemas">Se algo não funcionar</a></nav></div>
 
-<div class="card" id="notebook"><h2>Instalar no notebook (Google Chrome)</h2><ol>
-<li><b>Mostre a barra de favoritos.</b> No Chrome, aperte <span class="k">Ctrl</span> + <span class="k">Shift</span> + <span class="k">B</span> ao mesmo tempo. Uma barra aparece logo abaixo do endereço do site. Se ela já aparece, pule este passo (apertar de novo a esconde).</li>
-<li><b>Se já existe um favorito "Lotes sujos" antigo, apague-o:</b> clique nele com o botão direito do mouse e escolha <b>Excluir</b>.</li>
-<li><b>Arraste o botão vermelho abaixo para a barra de favoritos:</b> clique nele, segure o botão do mouse, leve até a barra de favoritos e solte. Não basta clicar: é preciso arrastar.<br><br><a class="bm" href="javascript:(function(){var s=document.createElement('script');s.src='https://andersonpcavalcante.github.io/marcador-lotes/lotes_sujos.js?t='+Date.now();s.onerror=function(){alert('Não consegui baixar o Marcador de Lotes Sujos. Verifique a internet e tente de novo.')};document.head.appendChild(s)})()">Lotes sujos</a><br><br>Deve aparecer um favorito chamado <b>Lotes sujos</b> na barra.</li>
-<li><b>Abra o SisGeoBV</b> (sisgeobv.boavista.rr.gov.br) e faça o login normalmente.</li>
-<li><b>Ligue a camada dos lotes:</b> no menu de camadas do mapa, ative <b>Lotes base</b> (em Fiscalização base). Sem ela a ferramenta não encontra os lotes.</li>
-<li><b>Recarregue a página</b> apertando <span class="k">F5</span>.</li>
-<li><b>Clique no favorito "Lotes sujos".</b> Abre um painel azul e branco no canto do mapa, com a versão no topo.</li></ol>
-<p class="dica"><b>Uso diário:</b> abra o SisGeoBV, faça o login e clique no favorito. Na primeira vez no notebook, use <b>Carregar planilha</b> no painel para escolher os arquivos TXT das zonas (segure <span class="k">Ctrl</span> para escolher vários). Eles ficam guardados no navegador.</p></div>
+<div class="card" id="instalar"><h2>Instalar no notebook (Google Chrome)</h2><ol>
+<li><b>Mostre a barra de favoritos:</b> aperte <span class="k">Ctrl</span> + <span class="k">Shift</span> + <span class="k">B</span>. Se a barra já aparece, pule este passo.</li>
+<li><b>Se já existe um favorito "Lotes sujos" antigo,</b> clique nele com o botão direito e escolha <b>Excluir</b>.</li>
+<li><b>Arraste o botão vermelho para a barra de favoritos</b> (clique, segure, leve até a barra e solte; só clicar não funciona):<br><br><a class="bm" href="javascript:(function(){var s=document.createElement('script');s.src='https://andersonpcavalcante.github.io/marcador-lotes/lotes_sujos.js?t='+Date.now();s.onerror=function(){alert('Não consegui baixar o Marcador de Lotes Sujos. Verifique a internet e tente de novo.')};document.head.appendChild(s)})()">Lotes sujos</a></li>
+<li><b>Abra o SisGeoBV</b>, faça o login e ative a camada <b>Lotes base</b> (em Fiscalização base). Sem ela a ferramenta não encontra os lotes.</li>
+<li>Aperte <span class="k">F5</span> e clique no favorito <b>Lotes sujos</b>. Abre o painel azul e branco, com a versão no topo.</li></ol>
+<p class="dica">Na primeira vez no notebook, use <b>Carregar planilha</b> no painel para escolher os arquivos TXT das zonas (segure <span class="k">Ctrl</span> para escolher vários). Eles ficam guardados no navegador.</p></div>
 
-<div class="card"><h2>Código para celular, tablet e iPad</h2><p>No celular, no tablet e no iPad não dá para arrastar: o código abaixo é copiado e colado num favorito, como explicado a seguir.</p>
+<div class="card"><h2>Código para celular e tablet</h2><p>No celular não dá para arrastar: copie o código abaixo e cole num favorito, como explicado a seguir.</p>
 <button id="copiar">Copiar código</button><span id="ok"></span>
 <textarea id="cod" spellcheck="false" autocapitalize="off" autocorrect="off">javascript:(function(){var s=document.createElement('script');s.src='https://andersonpcavalcante.github.io/marcador-lotes/lotes_sujos.js?t='+Date.now();s.onerror=function(){alert('Não consegui baixar o Marcador de Lotes Sujos. Verifique a internet e tente de novo.')};document.head.appendChild(s)})()</textarea>
 <p class="dica">Se o botão não responder, toque e segure dentro do quadro, escolha <b>Selecionar tudo</b> e depois <b>Copiar</b>.</p></div>
 
-<div class="card" id="android"><h2>Instalar no Android: celular (Samsung Galaxy e outros) ou tablet — Google Chrome</h2><ol>
-<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b> (quadro acima). Aparece "Código copiado".</li>
-<li>No Chrome, abra qualquer site e salve um favorito: menu <b>⋮</b> e toque na <b>estrela</b> (☆).</li>
-<li>Abra o menu <b>⋮ → Favoritos</b>, toque nos três pontinhos ao lado do favorito que acabou de salvar e escolha <b>Editar</b>.</li>
-<li>No <b>Nome</b>, escreva <b>Lotes sujos</b>. No <b>Endereço (URL)</b>, apague tudo, toque e segure e escolha <b>Colar</b>. O endereço deve começar com <b>javascript:</b>. Salve.<br>(Se já existia um "Lotes sujos" antigo, edite esse mesmo favorito em vez de criar outro.)</li>
-<li>Abra o <b>SisGeoBV</b>, faça o login, ative a camada <b>Lotes base</b> e recarregue a página.</li>
-<li><b>Para abrir a ferramenta:</b> toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão que tem a <b>estrela</b>. (Pela lista de favoritos não funciona no Android; tem de ser pela barra de endereço.)</li>
-<li>Para marcar: toque rápido, com o dedo parado, dentro do lote.</li></ol></div>
+<div class="card" id="android"><h2>Instalar no Android — Google Chrome</h2><ol>
+<li>Abra esta página no aparelho e toque em <b>Copiar código</b>.</li>
+<li>No Chrome, abra qualquer site, toque no menu <b>⋮</b> e na <b>estrela</b> (☆) para salvar um favorito.</li>
+<li>Menu <b>⋮ → Favoritos</b>: nos três pontinhos ao lado do favorito salvo, escolha <b>Editar</b>.</li>
+<li>Nome: <b>Lotes sujos</b>. Endereço (URL): apague tudo, toque e segure e escolha <b>Colar</b>; deve começar com <b>javascript:</b>. Salve.</li>
+<li><b>Para abrir:</b> no SisGeoBV (logado, com <b>Lotes base</b> ativa), toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão com a <b>estrela</b>. Pela lista de favoritos não funciona no Android.</li></ol></div>
 
 <div class="card" id="iphone"><h2>Instalar no iPhone ou iPad — Google Chrome</h2><ol>
-<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b>.</li>
+<li>Abra esta página no aparelho e toque em <b>Copiar código</b>.</li>
 <li>No Chrome, abra qualquer site, toque no menu <b>⋯</b> e escolha <b>Adicionar aos Favoritos</b>.</li>
-<li>Toque em <b>⋯ → Favoritos</b>, toque e segure o favorito salvo e escolha <b>Editar favorito</b>.</li>
-<li>Mude o nome para <b>Lotes sujos</b>, apague o endereço (URL), toque e segure e escolha <b>Colar</b>. Confira se começa com <b>javascript:</b> e toque em <b>OK</b>.</li>
-<li>Abra o <b>SisGeoBV</b>, faça o login, ative a camada <b>Lotes base</b> e recarregue a página.</li>
-<li><b>Para abrir a ferramenta:</b> toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão do favorito (ou abra pelo menu <b>⋯ → Favoritos</b>).</li></ol>
-<h3>No Safari</h3><ol>
-<li>Abra esta página no aparelho e toque no botão azul <b>Copiar código</b>.</li>
-<li>Abra qualquer site, toque no ícone de compartilhar (□↑) e escolha <b>Adicionar Favorito</b>. Salve.</li>
-<li>Abra os Favoritos (ícone de livro), toque em <b>Editar</b>, escolha o favorito salvo, mude o nome para <b>Lotes sujos</b>, apague o endereço e cole o código. Toque em OK.</li>
-<li>Abra o SisGeoBV, faça o login, ative <b>Lotes base</b>, recarregue e abra o favorito pelo menu de Favoritos.</li></ol></div>
+<li><b>⋯ → Favoritos</b>: toque e segure o favorito salvo e escolha <b>Editar favorito</b>.</li>
+<li>Nome: <b>Lotes sujos</b>. Endereço (URL): apague, toque e segure e escolha <b>Colar</b>; deve começar com <b>javascript:</b>. Toque em <b>OK</b>.</li>
+<li><b>Para abrir:</b> no SisGeoBV (logado, com <b>Lotes base</b> ativa), toque na barra de endereço, digite <b>Lotes sujos</b> e toque na sugestão do favorito.</li></ol>
+<h3>Se usar o Safari</h3>
+<p>Toque em <b>Copiar código</b>; em qualquer site, toque em compartilhar (□↑) → <b>Adicionar Favorito</b>; abra os Favoritos (ícone de livro) → <b>Editar</b>, mude o nome para <b>Lotes sujos</b>, apague o endereço e cole o código. No SisGeoBV, abra pelo menu de Favoritos.</p></div>
 
-<div class="card"><h2>Dicas para usar no celular</h2><ul>
-<li>O painel fica compacto. As opções de escritório (identificação do mapeamento, planilhas do cadastro, Excel, importar mapeamento, importar lista, rota e foto) ficam em <b>Mais opções</b>.</li>
-<li>Toque no <b>–</b> para recolher o painel numa barrinha com <b>MARCANDO</b> e <b>SEGUIR</b>. Ele volta recolhido da próxima vez.</li>
-<li>Funciona com o celular em pé ou deitado (num suporte no carro, deitado fica melhor). Em lote estreito, dê zoom antes de tocar.</li>
-<li>Deixe a tela sem bloquear durante a varredura: com a tela apagada, o GPS e o "Seguir o carro" param.</li>
-<li><b>Mapa girando com o carro (v3.15):</b> com o <b>Seguir o carro</b> ligado, a frente do carro fica sempre para cima, como no Waze. O lote à sua direita na rua aparece à direita na tela. O mapa só gira com o carro andando (acima de ~5 km/h); parado, fica quieto para você conferir e marcar. Prefere o jeito antigo? Em <b>Mais opções</b>, toque em <b>🧭 Mapa: direção do carro</b> para trocar por <b>⬆ Norte para cima</b>.</li>
-<li><b>Dois dedos:</b> com a marcação ligada, a pinça (zoom), arrastar e o toque duplo funcionam normalmente; só o <b>giro</b> do mapa com dois dedos fica desligado (era nesse gesto que se marcava lote sem querer). Um toque logo depois de um gesto com dois dedos é ignorado.</li>
-<li><b>Arrastou o mapa?</b> O seguir pausa e aparece a faixa azul <b>"Seguir pausado — volta em 10 s"</b>. Dez segundos depois de soltar, ele volta sozinho; ou toque em <b>▶ Voltar agora</b>. O zoom com pinça não pausa.</li>
-<li><b>Marcou errado?</b> Toque de novo no lote: aparece a pergunta <b>"Lote já marcado — deseja desmarcá-lo?"</b> com os botões <b>Desmarcar</b> e <b>Cancelar</b> (e <b>Fotografar</b>, se a foto estiver ligada).</li>
-<li>A janelinha de coordenadas do SisGeoBV (Lat/Lng, UTM) não aparece mais enquanto a marcação está ligada. Com a marcação desligada, o mapa funciona normalmente.</li>
-<li>No celular, só marque e use <b>Exportar mapeamento</b> (por exemplo, salvando no Google Drive). No notebook, use <b>Importar mapeamento</b> e escolha o arquivo. As planilhas do cadastro (com proprietários e CPF-CNPJ) ficam só no notebook.</li></ul>
-<p class="dica"><b>Fotos ainda não exportadas:</b> quando houver fotos só no aparelho, o painel mostra um aviso laranja. Use <b>Exportar mapeamento</b> ao fim do dia; o aviso some.</p>
-<p class="dica"><b>Cores dos lotes no mapa do SisGeoBV:</b> <span class="cor" style="background:#e11d48"></span>vermelho = marcado no mapeamento · <span class="cor" style="background:#7c3aed"></span>roxo = sujo confirmado na vistoria · <span class="cor" style="background:#16a34a"></span>verde = limpo na vistoria.</p></div>
+<div class="card" id="mapeamento"><h2>Mapeamento (marcar lotes)</h2><ul>
+<li><b>Marcar:</b> toque rápido, com o dedo parado, dentro do lote. <b>Desmarcar:</b> toque de novo no lote e escolha <b>Desmarcar</b>.</li>
+<li><b>Seguir o carro:</b> o mapa acompanha o GPS e gira com o carro, frente para cima, como no Waze. Se você arrastar o mapa, o seguir pausa e volta sozinho em 10 segundos. Para o norte sempre para cima, troque em <b>Mais opções</b>.</li>
+<li>No celular, o painel fica compacto: o <b>–</b> recolhe o painel numa barrinha, e as opções de escritório ficam em <b>Mais opções</b>.</li>
+<li>Deixe a tela sem bloquear durante o trabalho: com a tela apagada, o GPS para.</li>
+<li><b>Cores no mapa:</b> <span class="cor" style="background:#e11d48"></span>vermelho = marcado · <span class="cor" style="background:#7c3aed"></span>roxo = sujo confirmado na vistoria · <span class="cor" style="background:#16a34a"></span>verde = limpo na vistoria.</li></ul></div>
 
-<div class="card" id="rota">
-<h2>Rota com linha azul (v3.17)</h2>
-<p>Na aba <b>Rota</b>, a ferramenta leva você de lote em lote, como o Waze, dentro do próprio mapa do SisGeoBV.</p>
-<ul>
-<li><b>Lista avulsa:</b> cole as inscrições (uma por linha; pontos e DV são opcionais) e toque em <b>🧭 Montar rota da lista</b>. A ferramenta acha cada lote no SisGeoBV e calcula, a partir de onde você está, a ordem com a <b>menor distância total pelas ruas</b> (respeita mão única, canais e avenidas sem retorno). Por isso o primeiro lote nem sempre é o mais perto em linha reta: é o que deixa o percurso inteiro mais curto. Sem internet, usa a distância em linha reta.</li>
-<li><b>📂 Abrir arquivo</b> (v3.18): em vez de colar, escolha um arquivo com a lista — TXT, CSV, Excel (.xls/.xlsx) ou Word (.doc/.docx) —, uma inscrição embaixo da outra. As inscrições vão para a caixa; confira e toque em <b>Montar rota da lista</b>. <b>Limpar lista</b> esvazia a caixa.</li>
-<li>Também dá para montar a rota dos <b>lotes marcados</b> no mapeamento.</li>
-<li><b>Rota de vistoria ou rota de visita</b> (v3.19): escolha na aba Rota. Na <b>vistoria</b>, o cartão traz o botão roxo <b>📷 Vistoriar</b>. Na <b>visita</b> (por exemplo, ir a empresas de uma lista de inscrições), o cartão mostra só Concluído, Pular, Waze e Maps. A escolha fica guardada no aparelho e pode ser trocada a qualquer momento.</li>
-<li>O <b>Seguir o carro</b> liga sozinho. Uma <b>linha azul</b> mostra o caminho pelas ruas até o próximo lote, e o cartão no alto da tela mostra <b>"Próximo: nº 1 … 850 m pelas ruas · ~2 min"</b>.</li>
-<li>Ao chegar (uns 30 m), o cartão mostra <b>✔ Chegou</b>. Toque em <b>✔ Concluído</b> para ir ao próximo, ou em <b>Pular</b>. A ordem dos que faltam é refeita pelas ruas, a partir de onde você está.</li>
-<li>Se você sair do caminho, a linha é recalculada. Sem internet (ou com o serviço de rotas fora do ar), aparece uma <b>linha reta tracejada</b> com a distância.</li>
-<li><b>Waze</b> e <b>Maps</b> abrem a navegação por voz até o lote, como reserva. Tocar num lote da lista (ou no número dele no mapa) faz dele o próximo destino. O <b>–</b> recolhe o cartão numa pílula pequena (<b>nº 1 · 140 m</b>); o <b>▢</b> abre de novo.</li>
-<li><b>O cartão não cobre o painel</b> (v3.19): se o painel estiver no alto, o cartão desce para a parte de baixo; com o painel aberto ocupando a tela do celular, o cartão vira a pílula no canto. Dá para <b>arrastar o cartão</b> pelo título; um <b>toque duplo</b> no título devolve à posição automática.</li>
-<li>A rota fica guardada no aparelho até você tocar em <b>Encerrar rota</b>. O serviço de rotas é gratuito (OpenStreetMap); só as coordenadas são enviadas, nunca inscrição ou proprietário.</li>
-</ul></div>
+<div class="card" id="rota"><h2>Rota</h2><ol>
+<li>Na aba <b>Rota</b>, cole as inscrições (uma por linha) ou toque em <b>📂 Abrir arquivo</b> (TXT, Excel ou Word). Até 30 por rota.</li>
+<li>Escolha o tipo: <b>📷 Rota de vistoria</b> (com o botão de vistoria no cartão) ou <b>🚗 Rota de visita</b> (só para chegar aos endereços, por exemplo de empresas).</li>
+<li>Toque em <b>🧭 Montar rota da lista</b>. A ferramenta acha os lotes e calcula a ordem com o <b>menor percurso pelas ruas</b>, a partir de onde você está.</li>
+<li>Siga a <b>linha azul</b>. Ao chegar, o cartão mostra <b>✔ Chegou</b>. Toque em <b>✔ Concluído</b> para ir ao próximo, ou em <b>Pular</b>. <b>Waze</b> e <b>Maps</b> abrem a navegação por voz, como reserva.</li></ol>
+<p class="dica"><b>O cartão:</b> o <b>–</b> recolhe numa pílula pequena (nº 1 · 140 m) e o <b>▢</b> abre de novo. Ele não cobre o painel e pode ser arrastado pelo título; dois toques no título devolvem à posição automática. A rota fica guardada até você tocar em <b>Encerrar rota</b>. Sem internet, aparece uma linha reta tracejada.</p></div>
 
-<div class="card" id="vistoria-rota"><h2>Vistoria pelo cartão da rota (v3.19)</h2>
-<p>O jeito mais rápido de vistoriar os lotes de uma lista, sem trocar de aba e sem tocar no mapa. Não precisa ligar a "Foto ao marcar".</p><ol>
-<li>Na aba <b>Rota</b>, deixe marcada a <b>📷 Rota de vistoria</b>, cole (ou abra) as inscrições e toque em <b>🧭 Montar rota da lista</b>.</li>
-<li>Siga a linha azul. Ao chegar, o cartão mostra <b>✔ Chegou</b>. Toque em <b>📷 Vistoriar</b>.</li>
-<li>Escolha <b>SUJO</b> ou <b>LIMPO</b>. A câmera abre; tire a foto.</li>
-<li>Com a foto salva, o lote entra no mapeamento (unidade 001) como <b>Sujo confirmado</b> (roxo) ou <b>Limpo na vistoria</b> (verde), com a foto carimbada. Se a câmera for cancelada, nada é gravado.</li>
-<li>Toque em <b>➜ Próximo lote</b>: o lote é concluído e a linha azul vai para o seguinte. Se precisar, <b>📷 Mais uma foto</b> abre a câmera de novo no mesmo lote.</li></ol>
-<p>Nome da foto: <b>inscrição com DV + data e hora</b>, por exemplo <code>01.15.101.0002.001.0_20261024-1530.jpg</code>. Só a partir da 2ª foto do mesmo lote entra um número no fim (<code>_2</code>). No fim do dia, use <b>Exportar mapeamento</b> na aba Mapeamento, como sempre: as fotos e as situações vão no pacote .zip e saem no relatório.</p></div>
+<div class="card" id="vistoria"><h2>Vistoria com foto</h2><ol>
+<li>Monte uma <b>📷 Rota de vistoria</b> com as inscrições a vistoriar (veja Rota, acima).</li>
+<li>Ao chegar ao lote, toque em <b>📷 Vistoriar</b> no cartão e escolha <b>SUJO</b> ou <b>LIMPO</b>.</li>
+<li>A câmera abre: tire a foto. O lote entra no mapeamento como <b>Sujo confirmado</b> ou <b>Limpo na vistoria</b>, com a foto carimbada (data e hora, GPS e inscrição com dígito). Se a câmera for cancelada, nada é gravado.</li>
+<li>Toque em <b>➜ Próximo lote</b> para seguir. Se precisar, <b>📷 Mais uma foto</b> fotografa de novo o mesmo lote.</li></ol>
+<p>Nome da foto: inscrição e data e hora, por exemplo <b>01.15.101.0002.001.0_20261024-1530.jpg</b>. A partir da 2ª foto do mesmo lote entra um número no fim (_2).</p>
+<p class="dica"><b>Outra forma:</b> em <b>Mais opções</b>, ligue <b>📷 Foto ao marcar</b>. Aí, ao marcar um lote no mapeamento, aparece o botão <b>FOTOGRAFAR</b>. Para trocar a situação ou ver as fotos, use o botão <b>📷</b> do lote na lista.</p></div>
 
-<div class="card" id="vistoria"><h2>Vistoria com foto (fiscal designado)</h2>
-<p>A foto é <b>opcional</b> e vem desligada. Quem só faz o mapeamento do bairro não precisa mexer em nada.</p><ol>
-<li><b>Leve os lotes para o celular:</b> use <b>Importar mapeamento</b> com o arquivo do mapeamento do bairro. Os lotes aparecem em vermelho no mapa.</li>
-<li><b>Ligue a foto:</b> em <b>Mais opções</b>, toque no botão roxo <b>📷 Foto ao marcar</b> até ficar <b>LIGADA</b>. A escolha fica guardada no aparelho.</li>
-<li><b>No lote:</b> toque no lote no mapa. Aparece embaixo o botão <b>FOTOGRAFAR nº X</b>. Toque nele, a câmera traseira abre; tire a foto e toque em <b>Usar foto</b>.</li>
-<li>A foto sai com o <b>carimbo</b> no canto inferior direito: data e hora, coordenadas do GPS do aparelho e a inscrição completa com dígito verificador. Um cartão "✔ Foto salva" aparece por alguns segundos; toque nele para ver a foto em tela cheia.</li>
-<li>Com a primeira foto, o lote vira <b>Sujo confirmado</b> (roxo no mapa). Se o lote estiver limpo, toque no botão <b>📷</b> do lote na lista e escolha <b>Limpo na vistoria</b> (verde).</li>
-<li><b>Ver as fotos:</b> no botão <b>📷</b> de cada lote. Toque na foto para abrir em tela cheia; amplie com dois dedos ou com toque duplo; deslize para trocar de foto; <b>×</b> fecha.</li>
-<li><b>No fim do dia:</b> toque em <b>Exportar mapeamento</b> e depois em <b>ENVIAR PACOTE</b>. Sai um arquivo <b>.zip</b> com os lotes e as fotos (por exemplo, salve no Google Drive).</li>
-<li><b>No notebook:</b> <b>Importar mapeamento</b> e escolha o <b>.zip</b>. Se o .zip tiver sido descompactado no caminho, escolha o arquivo .json junto com as fotos .jpg (pode marcar todas de uma vez).</li></ol>
-<p class="alerta"><b>Atenção:</b> as fotos ficam guardadas só no aparelho até serem exportadas. Exporte o pacote ao fim de cada dia e não limpe os dados do navegador antes disso. Fotografe com o celular <b>deitado</b>: a foto aproveita melhor o espaço do relatório.</p></div>
-
-<div class="card" id="rota"><h2>Rota no Google My Maps</h2>
-<p>Gera a planilha que o My Maps lê para criar os balões no mapa. Depois, no celular, o mapa abre pelo <b>Google Maps → Salvos</b> e leva até cada lote.</p><ol>
-<li>No painel, abra <b>Importar lista de inscrições</b>, cole as inscrições designadas (com ou sem pontos e dígito) e, se quiser, escreva um título (ex.: Mecejana).</li>
-<li>Toque em <b>Rota (My Maps)</b>. A ferramenta busca cada lote no SisGeoBV e baixa a planilha <b>Rota_&lt;título&gt;_DD-MM.xlsx</b>. Inscrições não encontradas ficam de fora e aparecem listadas.</li>
-<li>No My Maps, em <b>Adicionar camada → Importar</b>, escolha a planilha: <b>Lat-Long</b> como local e <b>Descricao</b> como título. O nome do arquivo vira o nome da camada.</li></ol>
-<p>Para os lotes já marcados no mapa, use <b>Rota dos lotes marcados (My Maps)</b> no painel.</p>
-<p>A planilha traz <b>ID</b> (na ordem do trajeto, começando perto de onde você está), <b>Lat-Long</b>, <b>Descricao</b> (inscrição com dígito), <b>Endereço</b> e <b>Situação</b>, com a legenda:</p>
-<table><tr><th>Código</th><th>Significa</th><th>Cor sugerida</th></tr>
-<tr><td><b>P</b></td><td>Pendente: lote designado sem informação no painel</td><td><span class="cor" style="background:#0288d1"></span>azul</td></tr>
-<tr><td><b>S</b></td><td>Sujo: apontado no mapeamento, aguardando a vistoria</td><td><span class="cor" style="background:#fbc02d"></span>amarelo</td></tr>
-<tr><td><b>SC</b></td><td>Sujo confirmado na vistoria de autuação</td><td><span class="cor" style="background:#ff5252"></span>vermelho</td></tr>
-<tr><td><b>L</b></td><td>Limpo na vistoria de autuação</td><td><span class="cor" style="background:#558b2f"></span>verde</td></tr></table>
-<p class="dica"><b>Cores automáticas:</b> na camada do My Maps, clique no estilo e escolha <b>Estilizar por coluna de dados: Situação</b>; ajuste a cor de cada código uma vez. Depois da vistoria, gere a rota de novo com todos os lotes da camada e use <b>⋮ → Reimportar e mesclar → Substituir todos os itens</b>: os pinos mudam de cor sozinhos.</p>
-<p class="alerta">Não coloque proprietário nem CPF-CNPJ no My Maps: o mapa fica guardado no Google. A planilha da rota não leva esses dados.</p></div>
+<div class="card" id="fimdodia"><h2>No fim do dia</h2><ol>
+<li>No celular, na aba <b>Mapeamento</b>, toque em <b>Exportar mapeamento</b> e depois em <b>ENVIAR PACOTE</b>. Sai um <b>.zip</b> com os lotes, as situações e as fotos; salve no Google Drive.</li>
+<li>No notebook, toque em <b>Importar mapeamento</b> e escolha o <b>.zip</b>. Se ele tiver sido descompactado, escolha o .json junto com as fotos .jpg.</li></ol>
+<p class="alerta"><b>Atenção:</b> as fotos ficam só no celular até você exportar. Enquanto houver fotos não exportadas, o painel mostra um aviso laranja. Exporte ao fim de cada dia e não limpe os dados do navegador antes disso. As planilhas do cadastro, com proprietário e CPF-CNPJ, ficam só no notebook.</p></div>
 
 <div class="card" id="relatorio"><h2>Relatório</h2><ul>
-<li><b>Gerar relatório</b> abre o relatório numa janela nova; use <b>Imprimir / salvar em PDF</b>. O papel já sai em <b>A4 paisagem</b>.</li>
-<li><b>Tamanho</b> (v3.16.1): na barra do relatório, escolha 70% a 110%. O texto e as tabelas diminuem ou aumentam na tela e no PDF (menos folhas em 70–80%); as fotos do anexo continuam do mesmo tamanho. O aparelho lembra a escolha.</li>
+<li><b>Gerar relatório</b> abre o relatório numa janela nova; use <b>Imprimir / salvar em PDF</b> (A4 paisagem). Em <b>Tamanho</b> (70% a 110%), você diminui ou aumenta o texto e gasta menos folhas.</li>
 <li>A tabela tem linhas zebradas e pode ser ordenada por inscrição, data e hora, proprietário, CPF-CNPJ, endereço, bairro ou situação.</li>
-<li>Quando há vistoria, entram a coluna <b>Situação</b> e a contagem de sujos confirmados, limpos e não vistoriados.</li>
-<li>As fotos saem num <b>anexo</b> em página separada ("ANEXO – REGISTRO FOTOGRÁFICO"), em três colunas, cada foto com 7 × 4 cm e a inscrição em cima. A caixa <b>Incluir fotos</b> tira o anexo da impressão.</li>
+<li>Quando há vistoria, entram a coluna <b>Situação</b> e a contagem de sujos e limpos. As fotos saem no <b>ANEXO – REGISTRO FOTOGRÁFICO</b>, em página separada; a caixa <b>Incluir fotos</b> tira o anexo da impressão.</li>
 <li><b>Planilha (Excel)</b> traz as mesmas colunas, com filtro.</li></ul></div>
+
+<div class="card" id="mymaps"><h2>Google My Maps (opcional)</h2>
+<p>Para mostrar o trabalho num mapa do Google: na aba Rota, toque em <b>Planilha My Maps</b> (ou, no Mapeamento, em <b>Mais opções → Rota dos lotes marcados (My Maps)</b>). No My Maps, use <b>Adicionar camada → Importar</b>, com <b>Lat-Long</b> como local e <b>Descricao</b> como título, e <b>Estilizar por coluna de dados: Situação</b>.</p>
+<table><tr><th>Código</th><th>Significa</th><th>Cor sugerida</th></tr>
+<tr><td><b>P</b></td><td>Pendente</td><td><span class="cor" style="background:#0288d1"></span>azul</td></tr>
+<tr><td><b>S</b></td><td>Sujo apontado no mapeamento</td><td><span class="cor" style="background:#fbc02d"></span>amarelo</td></tr>
+<tr><td><b>SC</b></td><td>Sujo confirmado na vistoria</td><td><span class="cor" style="background:#ff5252"></span>vermelho</td></tr>
+<tr><td><b>L</b></td><td>Limpo na vistoria</td><td><span class="cor" style="background:#558b2f"></span>verde</td></tr></table>
+<p class="alerta">A planilha não leva proprietário nem CPF-CNPJ. Não acrescente esses dados no My Maps, porque o mapa fica guardado no Google.</p></div>
 
 <div class="card" id="problemas"><h2>Se algo não funcionar</h2><ul>
 <li><b>"Não consegui baixar o Marcador":</b> o aparelho está sem internet. Confira a conexão e toque no favorito de novo.</li>
-<li><b>"Há uma versão antiga do Marcador aberta":</b> aperte <span class="k">F5</span> no SisGeoBV e clique no favorito de novo.</li>
-<li><b>"Abra o mapa do SisGeoBV":</b> o favorito foi clicado fora do mapa ou antes de o mapa carregar. Abra o mapa, espere carregar e clique de novo.</li>
+<li><b>"Há uma versão antiga do Marcador aberta":</b> recarregue o SisGeoBV (<span class="k">F5</span>) e abra o favorito de novo.</li>
+<li><b>"Abra o mapa do SisGeoBV":</b> espere o mapa carregar e abra o favorito de novo.</li>
 <li><b>"Sem acesso aos lotes":</b> ative a camada <b>Lotes base</b> ou faça o login de novo.</li>
-<li><b>Nada acontece ao clicar no favorito:</b> o favorito foi criado errado. Apague-o e repita a instalação.</li>
-<li><b>O botão FOTOGRAFAR não aparece:</b> ligue <b>📷 Foto ao marcar</b> em Mais opções.</li>
-<li><b>A foto saiu "sem GPS":</b> o navegador não liberou a localização. Permita a localização para o SisGeoBV; enquanto isso, o carimbo usa o centro do lote.</li>
-<li><b>As fotos não aparecem no notebook:</b> importe o <b>.zip</b> inteiro, ou escolha as fotos .jpg em <b>Importar mapeamento</b>.</li>
+<li><b>Nada acontece ao abrir o favorito:</b> ele foi criado errado. Apague e repita a instalação.</li>
+<li><b>O botão 📷 Vistoriar não aparece:</b> na aba Rota, escolha <b>📷 Rota de vistoria</b>.</li>
+<li><b>A câmera não abriu:</b> toque em <b>📷 Vistoriar</b> de novo e confira se o Chrome tem permissão de câmera nos ajustes do celular.</li>
+<li><b>A foto saiu "sem GPS":</b> permita a localização para o SisGeoBV. Enquanto isso, o carimbo usa o centro do lote.</li>
+<li><b>As fotos não aparecem no notebook:</b> importe o <b>.zip</b> inteiro, ou as fotos .jpg em <b>Importar mapeamento</b>.</li>
 <li>Os lotes marcados, as fotos e as planilhas carregadas <b>não se perdem</b> ao atualizar.</li></ul></div>
 </main>
 <script>
@@ -162,5 +122,5 @@ document.getElementById('copiar').onclick=function(){var t=document.getElementBy
 function ok(){document.getElementById('ok').textContent='Código copiado.';}
 function manual(){t.value=COD;t.focus();t.select();t.setSelectionRange(0,COD.length);document.execCommand('copy');ok();}
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(COD).then(ok,manual);}else{manual();}};
-fetch('lotes_sujos.js',{cache:'no-store'}).then(function(r){return r.text();}).then(function(s){var m=s.match(/var t="([\d.]+)"/);if(m)document.getElementById('ver').textContent='versão '+m[1];}).catch(function(){});
+fetch('lotes_sujos.js',{cache:'no-store'}).then(function(r){return r.text();}).then(function(s){var m=s.match(/"(3\.\d+(?:\.\d+)?)"/);if(m)document.getElementById('ver').textContent='versão '+m[1];}).catch(function(){});
 </script></body></html>
