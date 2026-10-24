@@ -85,31 +85,17 @@ nav a{display:inline-block;margin:0 10px 6px 0;color:#1e3a8a;font-weight:600}
 <p class="dica"><b>Fotos ainda não exportadas:</b> quando houver fotos só no aparelho, o painel mostra um aviso laranja. Use <b>Exportar mapeamento</b> ao fim do dia; o aviso some.</p>
 <p class="dica"><b>Cores dos lotes no mapa do SisGeoBV:</b> <span class="cor" style="background:#e11d48"></span>vermelho = marcado no mapeamento · <span class="cor" style="background:#7c3aed"></span>roxo = sujo confirmado na vistoria · <span class="cor" style="background:#16a34a"></span>verde = limpo na vistoria.</p></div>
 
-<div class="card" id="os">
-<h2>Ordens de Serviço e Autuação (v3.16)</h2>
-<p>O painel agora tem três abas: <b>Mapeamento</b> (o de sempre), <b>OS</b> e <b>Autuação</b>.</p>
-<ul>
-<li><b>Aba OS:</b> toque em <b>📄 Importar OS (PDF)</b> e escolha os PDFs das Ordens de Serviço (pode marcar vários de uma vez). A ferramenta reconhece sozinha a OS de <b>mapeamento</b> (bairro) e a OS de <b>auto de infração</b> (uma inscrição), e lê nº, processo, fiscais, prazo, inscrição com DV e a OS de origem. Se o DV da OS não bater com o calculado, aparece um aviso.</li>
-<li><b>Prazo:</b> as OS que vencem em até 2 dias aparecem em laranja; as vencidas, em vermelho.</li>
-<li><b>OS de mapeamento:</b> toque em <b>usar</b> para ligá-la ao mapeamento. O relatório detalhado passa a sair com nº da OS, processo, bairro, os fiscais e a base legal.</li>
-<li><b>Aba Autuação:</b> os lotes das OS aparecem no mapa, coloridos e numerados. Toque no lote (ou na OS da lista) para abrir o cartão: <b>📷 SUJO</b>, <b>📷 LIMPO</b> ou <b>📷 NÃO VISTORIADO</b> (com o motivo). Toda situação pede foto.</li>
-<li><b>Lote sujo:</b> depois registre o <b>nº do auto</b> e, na entrega, a <b>data</b> e o resultado: Recebido, Ausente, Falecido(a), Fechado, Endereço incompleto, Endereço não localizado ou Mudou-se. Qualquer resultado registrado encerra a OS.</li>
-<li><b>Cores:</b> <span class="cor" style="background:#f97316"></span>laranja = a vistoriar · <span class="cor" style="background:#6b7280"></span>cinza = não vistoriado · <span class="cor" style="background:#7c3aed"></span>roxo = sujo, auto em andamento · <span class="cor" style="background:#16a34a"></span>verde = limpo · <span class="cor" style="background:#1e3a8a"></span>azul-escuro = entrega do auto registrada (concluída).</li>
-<li><b>Relatórios:</b> <b>Relatório geral</b> (todas as OS numa tabela) e <b>Relatórios por OS</b> (uma folha por OS, com as fotos, para juntar a cada processo). No cartão da OS, o botão <b>Relatório</b> sai só daquela OS.</li>
-<li><b>Exportar OS</b> gera um pacote .zip com as OS e as fotos; no notebook, use <b>Importar pacote de OS</b>. O proprietário aparece quando a planilha (TXT) da zona está carregada na aba Mapeamento.</li>
-</ul></div>
-
 <div class="card" id="rota">
 <h2>Rota com linha azul (v3.17)</h2>
 <p>Na aba <b>Rota</b>, a ferramenta leva você de lote em lote, como o Waze, dentro do próprio mapa do SisGeoBV.</p>
 <ul>
-<li><b>Lista avulsa:</b> cole as inscrições (uma por linha; pontos e DV são opcionais) e toque em <b>🧭 Montar rota da lista</b>. A ferramenta acha cada lote no SisGeoBV e põe na ordem do <b>mais próximo de onde você está</b>.</li>
-<li>Também dá para montar a rota das <b>OS pendentes</b> ou dos <b>lotes marcados</b>.</li>
+<li><b>Lista avulsa:</b> cole as inscrições (uma por linha; pontos e DV são opcionais) e toque em <b>🧭 Montar rota da lista</b>. A ferramenta acha cada lote no SisGeoBV e calcula, a partir de onde você está, a ordem com a <b>menor distância total pelas ruas</b> (respeita mão única, canais e avenidas sem retorno). Por isso o primeiro lote nem sempre é o mais perto em linha reta: é o que deixa o percurso inteiro mais curto. Sem internet, usa a distância em linha reta.</li>
+<li><b>📂 Abrir arquivo</b> (v3.18): em vez de colar, escolha um arquivo com a lista — TXT, CSV, Excel (.xls/.xlsx) ou Word (.doc/.docx) —, uma inscrição embaixo da outra. As inscrições vão para a caixa; confira e toque em <b>Montar rota da lista</b>. <b>Limpar lista</b> esvazia a caixa.</li>
+<li>Também dá para montar a rota dos <b>lotes marcados</b> no mapeamento.</li>
 <li>O <b>Seguir o carro</b> liga sozinho. Uma <b>linha azul</b> mostra o caminho pelas ruas até o próximo lote, e o cartão no alto da tela mostra <b>"Próximo: nº 1 … 850 m pelas ruas · ~2 min"</b>.</li>
-<li>Ao chegar (uns 30 m), o cartão mostra <b>✔ Chegou</b>. Toque em <b>✔ Concluído</b> para ir ao próximo, ou em <b>Pular</b>. A ordem dos que faltam é refeita a partir de onde você está.</li>
+<li>Ao chegar (uns 30 m), o cartão mostra <b>✔ Chegou</b>. Toque em <b>✔ Concluído</b> para ir ao próximo, ou em <b>Pular</b>. A ordem dos que faltam é refeita pelas ruas, a partir de onde você está.</li>
 <li>Se você sair do caminho, a linha é recalculada. Sem internet (ou com o serviço de rotas fora do ar), aparece uma <b>linha reta tracejada</b> com a distância.</li>
 <li><b>Waze</b> e <b>Maps</b> abrem a navegação por voz até o lote, como reserva. Tocar num lote da lista (ou no número dele no mapa) faz dele o próximo destino. O <b>–</b> recolhe o cartão.</li>
-<li>Na rota das OS, registrar a vistoria (📷 SUJO / LIMPO / NÃO VISTORIADO) conclui o ponto e a linha já vai para a próxima OS.</li>
 <li>A rota fica guardada no aparelho até você tocar em <b>Encerrar rota</b>. O serviço de rotas é gratuito (OpenStreetMap); só as coordenadas são enviadas, nunca inscrição ou proprietário.</li>
 </ul></div>
 
@@ -142,7 +128,7 @@ nav a{display:inline-block;margin:0 10px 6px 0;color:#1e3a8a;font-weight:600}
 
 <div class="card" id="relatorio"><h2>Relatório</h2><ul>
 <li><b>Gerar relatório</b> abre o relatório numa janela nova; use <b>Imprimir / salvar em PDF</b>. O papel já sai em <b>A4 paisagem</b>.</li>
-<li><b>Tamanho</b> (v3.16.1): na barra do relatório, escolha 70% a 110%. O texto e as tabelas diminuem ou aumentam na tela e no PDF (menos folhas em 70–80%); as fotos do anexo continuam do mesmo tamanho. O aparelho lembra a escolha. Vale também para os relatórios das OS.</li>
+<li><b>Tamanho</b> (v3.16.1): na barra do relatório, escolha 70% a 110%. O texto e as tabelas diminuem ou aumentam na tela e no PDF (menos folhas em 70–80%); as fotos do anexo continuam do mesmo tamanho. O aparelho lembra a escolha.</li>
 <li>A tabela tem linhas zebradas e pode ser ordenada por inscrição, data e hora, proprietário, CPF-CNPJ, endereço, bairro ou situação.</li>
 <li>Quando há vistoria, entram a coluna <b>Situação</b> e a contagem de sujos confirmados, limpos e não vistoriados.</li>
 <li>As fotos saem num <b>anexo</b> em página separada ("ANEXO – REGISTRO FOTOGRÁFICO"), em três colunas, cada foto com 7 × 4 cm e a inscrição em cima. A caixa <b>Incluir fotos</b> tira o anexo da impressão.</li>
