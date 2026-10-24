@@ -92,12 +92,23 @@ nav a{display:inline-block;margin:0 10px 6px 0;color:#1e3a8a;font-weight:600}
 <li><b>Lista avulsa:</b> cole as inscrições (uma por linha; pontos e DV são opcionais) e toque em <b>🧭 Montar rota da lista</b>. A ferramenta acha cada lote no SisGeoBV e calcula, a partir de onde você está, a ordem com a <b>menor distância total pelas ruas</b> (respeita mão única, canais e avenidas sem retorno). Por isso o primeiro lote nem sempre é o mais perto em linha reta: é o que deixa o percurso inteiro mais curto. Sem internet, usa a distância em linha reta.</li>
 <li><b>📂 Abrir arquivo</b> (v3.18): em vez de colar, escolha um arquivo com a lista — TXT, CSV, Excel (.xls/.xlsx) ou Word (.doc/.docx) —, uma inscrição embaixo da outra. As inscrições vão para a caixa; confira e toque em <b>Montar rota da lista</b>. <b>Limpar lista</b> esvazia a caixa.</li>
 <li>Também dá para montar a rota dos <b>lotes marcados</b> no mapeamento.</li>
+<li><b>Rota de vistoria ou rota de visita</b> (v3.19): escolha na aba Rota. Na <b>vistoria</b>, o cartão traz o botão roxo <b>📷 Vistoriar</b>. Na <b>visita</b> (por exemplo, ir a empresas de uma lista de inscrições), o cartão mostra só Concluído, Pular, Waze e Maps. A escolha fica guardada no aparelho e pode ser trocada a qualquer momento.</li>
 <li>O <b>Seguir o carro</b> liga sozinho. Uma <b>linha azul</b> mostra o caminho pelas ruas até o próximo lote, e o cartão no alto da tela mostra <b>"Próximo: nº 1 … 850 m pelas ruas · ~2 min"</b>.</li>
 <li>Ao chegar (uns 30 m), o cartão mostra <b>✔ Chegou</b>. Toque em <b>✔ Concluído</b> para ir ao próximo, ou em <b>Pular</b>. A ordem dos que faltam é refeita pelas ruas, a partir de onde você está.</li>
 <li>Se você sair do caminho, a linha é recalculada. Sem internet (ou com o serviço de rotas fora do ar), aparece uma <b>linha reta tracejada</b> com a distância.</li>
-<li><b>Waze</b> e <b>Maps</b> abrem a navegação por voz até o lote, como reserva. Tocar num lote da lista (ou no número dele no mapa) faz dele o próximo destino. O <b>–</b> recolhe o cartão.</li>
+<li><b>Waze</b> e <b>Maps</b> abrem a navegação por voz até o lote, como reserva. Tocar num lote da lista (ou no número dele no mapa) faz dele o próximo destino. O <b>–</b> recolhe o cartão numa pílula pequena (<b>nº 1 · 140 m</b>); o <b>▢</b> abre de novo.</li>
+<li><b>O cartão não cobre o painel</b> (v3.19): se o painel estiver no alto, o cartão desce para a parte de baixo; com o painel aberto ocupando a tela do celular, o cartão vira a pílula no canto. Dá para <b>arrastar o cartão</b> pelo título; um <b>toque duplo</b> no título devolve à posição automática.</li>
 <li>A rota fica guardada no aparelho até você tocar em <b>Encerrar rota</b>. O serviço de rotas é gratuito (OpenStreetMap); só as coordenadas são enviadas, nunca inscrição ou proprietário.</li>
 </ul></div>
+
+<div class="card" id="vistoria-rota"><h2>Vistoria pelo cartão da rota (v3.19)</h2>
+<p>O jeito mais rápido de vistoriar os lotes de uma lista, sem trocar de aba e sem tocar no mapa. Não precisa ligar a "Foto ao marcar".</p><ol>
+<li>Na aba <b>Rota</b>, deixe marcada a <b>📷 Rota de vistoria</b>, cole (ou abra) as inscrições e toque em <b>🧭 Montar rota da lista</b>.</li>
+<li>Siga a linha azul. Ao chegar, o cartão mostra <b>✔ Chegou</b>. Toque em <b>📷 Vistoriar</b>.</li>
+<li>Escolha <b>SUJO</b> ou <b>LIMPO</b>. A câmera abre; tire a foto.</li>
+<li>Com a foto salva, o lote entra no mapeamento (unidade 001) como <b>Sujo confirmado</b> (roxo) ou <b>Limpo na vistoria</b> (verde), com a foto carimbada. Se a câmera for cancelada, nada é gravado.</li>
+<li>Toque em <b>➜ Próximo lote</b>: o lote é concluído e a linha azul vai para o seguinte. Se precisar, <b>📷 Mais uma foto</b> abre a câmera de novo no mesmo lote.</li></ol>
+<p>Nome da foto: <b>inscrição com DV + data e hora</b>, por exemplo <code>01.15.101.0002.001.0_20261024-1530.jpg</code>. Só a partir da 2ª foto do mesmo lote entra um número no fim (<code>_2</code>). No fim do dia, use <b>Exportar mapeamento</b> na aba Mapeamento, como sempre: as fotos e as situações vão no pacote .zip e saem no relatório.</p></div>
 
 <div class="card" id="vistoria"><h2>Vistoria com foto (fiscal designado)</h2>
 <p>A foto é <b>opcional</b> e vem desligada. Quem só faz o mapeamento do bairro não precisa mexer em nada.</p><ol>
