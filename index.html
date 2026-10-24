@@ -85,6 +85,20 @@ nav a{display:inline-block;margin:0 10px 6px 0;color:#1e3a8a;font-weight:600}
 <p class="dica"><b>Fotos ainda não exportadas:</b> quando houver fotos só no aparelho, o painel mostra um aviso laranja. Use <b>Exportar mapeamento</b> ao fim do dia; o aviso some.</p>
 <p class="dica"><b>Cores dos lotes no mapa do SisGeoBV:</b> <span class="cor" style="background:#e11d48"></span>vermelho = marcado no mapeamento · <span class="cor" style="background:#7c3aed"></span>roxo = sujo confirmado na vistoria · <span class="cor" style="background:#16a34a"></span>verde = limpo na vistoria.</p></div>
 
+<div class="card" id="os">
+<h2>Ordens de Serviço e Autuação (v3.16)</h2>
+<p>O painel agora tem três abas: <b>Mapeamento</b> (o de sempre), <b>OS</b> e <b>Autuação</b>.</p>
+<ul>
+<li><b>Aba OS:</b> toque em <b>📄 Importar OS (PDF)</b> e escolha os PDFs das Ordens de Serviço (pode marcar vários de uma vez). A ferramenta reconhece sozinha a OS de <b>mapeamento</b> (bairro) e a OS de <b>auto de infração</b> (uma inscrição), e lê nº, processo, fiscais, prazo, inscrição com DV e a OS de origem. Se o DV da OS não bater com o calculado, aparece um aviso.</li>
+<li><b>Prazo:</b> as OS que vencem em até 2 dias aparecem em laranja; as vencidas, em vermelho.</li>
+<li><b>OS de mapeamento:</b> toque em <b>usar</b> para ligá-la ao mapeamento. O relatório detalhado passa a sair com nº da OS, processo, bairro, os fiscais e a base legal.</li>
+<li><b>Aba Autuação:</b> os lotes das OS aparecem no mapa, coloridos e numerados. Toque no lote (ou na OS da lista) para abrir o cartão: <b>📷 SUJO</b>, <b>📷 LIMPO</b> ou <b>📷 NÃO VISTORIADO</b> (com o motivo). Toda situação pede foto.</li>
+<li><b>Lote sujo:</b> depois registre o <b>nº do auto</b> e, na entrega, a <b>data</b> e o resultado: Recebido, Ausente, Falecido(a), Fechado, Endereço incompleto, Endereço não localizado ou Mudou-se. Qualquer resultado registrado encerra a OS.</li>
+<li><b>Cores:</b> <span class="cor" style="background:#f97316"></span>laranja = a vistoriar · <span class="cor" style="background:#6b7280"></span>cinza = não vistoriado · <span class="cor" style="background:#7c3aed"></span>roxo = sujo, auto em andamento · <span class="cor" style="background:#16a34a"></span>verde = limpo · <span class="cor" style="background:#1e3a8a"></span>azul-escuro = entrega do auto registrada (concluída).</li>
+<li><b>Relatórios:</b> <b>Relatório geral</b> (todas as OS numa tabela) e <b>Relatórios por OS</b> (uma folha por OS, com as fotos, para juntar a cada processo). No cartão da OS, o botão <b>Relatório</b> sai só daquela OS.</li>
+<li><b>Exportar OS</b> gera um pacote .zip com as OS e as fotos; no notebook, use <b>Importar pacote de OS</b>. O proprietário aparece quando a planilha (TXT) da zona está carregada na aba Mapeamento.</li>
+</ul></div>
+
 <div class="card" id="vistoria"><h2>Vistoria com foto (fiscal designado)</h2>
 <p>A foto é <b>opcional</b> e vem desligada. Quem só faz o mapeamento do bairro não precisa mexer em nada.</p><ol>
 <li><b>Leve os lotes para o celular:</b> use <b>Importar mapeamento</b> com o arquivo do mapeamento do bairro. Os lotes aparecem em vermelho no mapa.</li>
